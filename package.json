@@ -1,0 +1,34 @@
+{
+  "name": "webpack-hw02",
+  "version": "1.0.0",
+  "description": "'My first webpack'",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslan-gorod/webpack.git"
+  },
+  "author": "Ruslan Malyavsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruslan-gorod/webpack/issues"
+  },
+  "homepage": "https://github.com/ruslan-gorod/webpack#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
