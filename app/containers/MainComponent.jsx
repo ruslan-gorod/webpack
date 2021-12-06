@@ -7,9 +7,7 @@ const MainComponent = () => {
     return (
         <React.Fragment>
             <MainMenu />
-            <ErrorBoundary>
-                <MovieList />
-            </ErrorBoundary>
+            <MovieList />
         </React.Fragment>
     )
 }
