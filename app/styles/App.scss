@@ -1,0 +1,57 @@
+.App {
+    padding-top: 3em;
+    background-color: #424242;
+    text-align: center;
+
+}
+
+h1 {
+  color: rgb(231, 14, 14);
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+}
+
+.main-header {
+    border-top: 10px solid rgba(#888888, 0.5);
+}
+
+.main-component {
+  padding-top: 25px;
+  border-bottom: 2px solid #424242;
+  margin-bottom: 30px;
+}
+
+.footer-p {
+    color: whitesmoke;
+}
+
+.film-category {
+    color: rgb(44, 7, 131);
+    font-size: 30px;
+    margin: 5,5,5,5;
+    padding: 5,5,5,5;
+    background-color: slategray;
+}
+
+.item {
+    margin: 10,10,10,10;
+    padding: 10,10,10,10;
+}
+
+h3 {
+    color: snow;
+    transform-style: preserve-3d;
+    font-style: oblique 40deg;
+    font-family: 'Monotype Corsiva';
+    font-size: 30px;
+}
+
+p {
+    color-scheme: inherit;
+    color: lightcoral;
+    font-size: 20px;
+    padding: 10,10,10,10;
+}

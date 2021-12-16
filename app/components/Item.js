@@ -2,6 +2,6 @@ import React from "react";
 
 export default function (props) {
     return (
-        <button> {props.item.name} </button>
+        <button className="film-category"> {props.item.name} </button>
     )
 }

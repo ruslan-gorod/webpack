@@ -1,23 +1,26 @@
-import React, { Component } from "react";
-import MainComponent from "../containers/MainComponent.jsx";
-import MainHeader from "./MainHeader";
-import Footer from "./Footer"
+import React, { Component, Suspense } from "react";
 import ErrorBoundary from "./ErrorBoundary.js";
+import '../styles/App.scss';
 
+const MainComponent = React.lazy(() => import("../containers/MainComponent.jsx"));
+const MainHeader = React.lazy(() => import("./MainHeader"));
+const Footer = React.lazy(() => import("./Footer"));
 
 const App = () => (
-    <>
+    <Suspense fallback="Loading...">
         <ErrorBoundary>
-            <MainHeader>
-                <h1>Top films</h1>
-            </MainHeader>
-            <MainComponent />
-            <Footer>
-                <hr />
-                <p>&copy; Ruslan Malyavsky</p>
-            </Footer>
+            <div className="App">
+                <MainHeader className="main-header">
+                    <h1>Top films</h1>
+                </MainHeader>
+                <MainComponent className="main-component" />
+                <Footer>
+                    <hr />
+                    <p className="footer-p">&copy; Ruslan Malyavsky</p>
+                </Footer>
+            </div>
         </ErrorBoundary>
-    </>
+    </Suspense>
 )
 
 export default App
