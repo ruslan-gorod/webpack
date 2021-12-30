@@ -5,8 +5,12 @@
 
 }
 
+header{
+    margin: 200px;
+}
+
 h1 {
-  color: rgb(231, 14, 14);
+  color: #F65261;
   font-weight: 300;
   font-size: 40px;
   letter-spacing: 1px;
@@ -29,11 +33,11 @@ h1 {
 }
 
 .film-category {
-    color: rgb(44, 7, 131);
+    color: #F65261;
     font-size: 30px;
     margin: 5,5,5,5;
     padding: 5,5,5,5;
-    background-color: slategray;
+    background-color: #424242;
 }
 
 .item {
