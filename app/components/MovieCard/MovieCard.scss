@@ -1,0 +1,45 @@
+.movie-card {
+    width: 100%;
+    padding: 5px;
+
+    display: block;
+	border: 1px solid #b5e9a7;
+	position: relative;
+	margin: 0 20px 20px 0;
+	text-decoration: none;
+    text-align: center;
+	color: #474747;
+	z-index: 0;
+	height: 100%;
+}
+
+.movie-card-menu {
+    display: none;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.movie-card:hover .movie-card-menu {
+    display: block;
+}
+
+.movie-menu-list {
+    list-style: none;
+    display: none;
+    top: 80px;
+    right: 10px;
+    font-size: 16;
+    position: absolute;
+    color: cyan;
+}
+
+.movie-card-menu:hover .movie-menu-list {
+    display: block;
+}
+
+.movie-menu-item {
+    margin: 5;
+    padding: 5;
+    border: cyan 1px;
+}

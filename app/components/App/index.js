@@ -1,10 +1,10 @@
-import React, { Component, Suspense } from "react";
-import ErrorBoundary from "./ErrorBoundary.js";
-import '../styles/App.scss';
+import React, { Suspense } from "react";
+import ErrorBoundary from "../ErrorBoundary";
+import '../../styles/App.scss';
 
-const MainComponent = React.lazy(() => import("../containers/MainComponent.jsx"));
-const MainHeader = React.lazy(() => import("./MainHeader"));
-const Footer = React.lazy(() => import("./Footer"));
+const MainComponent = React.lazy(() => import("../../containers/MainComponent.jsx"));
+const MainHeader = React.lazy(() => import("../MainHeader"));
+const Footer = React.lazy(() => import("../Footer"));
 
 const App = () => (
     <Suspense fallback="Loading...">

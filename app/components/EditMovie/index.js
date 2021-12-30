@@ -1,8 +1,8 @@
 import React, { Component, Suspense } from "react";
-const MovieInfo = React.lazy(() => import("../components/MovieInfo"));
+const MovieInfo = React.lazy(() => import("../MovieInfo"));
 
 const editOldMovie = () => {
-    alert("Add new movie");
+    alert("Edit movie");
 }
 
 class EditMovie extends Component {
@@ -22,4 +22,4 @@ class EditMovie extends Component {
     }
 }
 
-export default AddMovie;
+export default EditMovie;

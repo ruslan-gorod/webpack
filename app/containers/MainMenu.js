@@ -1,5 +1,5 @@
 import React from "react";
-import itemsData from "../files/itemsData.js"
+import itemsData from "../data/itemsData.js"
 import Item from "../components/Item";
 
 export default function MainMenu(){

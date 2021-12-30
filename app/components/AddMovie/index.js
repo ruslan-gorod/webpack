@@ -1,5 +1,5 @@
-import React, { Component, Suspense } from "react";
-const MovieInfo = React.lazy(() => import("../components/MovieInfo"));
+import React, { Suspense } from "react";
+const MovieInfo = React.lazy(() => import("../MovieInfo"));
 
 const addNewMovie = () => {
     alert("Add new movie");
