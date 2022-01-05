@@ -1,0 +1,28 @@
+.nav-menu *{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu > ul li {
+    display: block;
+    padding: 15px, 30 px, 15px, 40 px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid #424242;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li:hover {
+    background: #454547;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px #F65261;
+    transition: all 0.3s ease;
+}
