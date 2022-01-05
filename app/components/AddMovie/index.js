@@ -1,14 +1,11 @@
-import React, { Suspense } from "react";
-const MovieInfo = React.lazy(() => import("../MovieInfo"));
+import React from "react";
+import PopupWindow from '../PopupWindow/PopupWindow';
+import MovieForm from "../MovieForm";
 
-const addNewMovie = () => {
-    alert("Add new movie");
-}
-
-export default function AddMovie() {
+export default function AddMovie({ popupActive, setPopupActive }) {
     return (
-        <Suspense fallback="Loading...">
-            <MovieInfo handler={addNewMovie} />
-        </Suspense>
+        <PopupWindow active={popupActive} setActive={setPopupActive}>
+            <MovieForm name="Add movie"/>
+        </PopupWindow>
     )
 }

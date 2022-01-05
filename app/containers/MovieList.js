@@ -5,11 +5,11 @@ import '../styles/MovieList.scss';
 
 export default function MovieList() {
     const movieList = movies.map(movie => (
-        <li className="movie-list-item">    
+        <li className="movie-list-item" key={movie.id}>    
             <MovieCard
                 title={movie.title}
+                src={movie.src}
                 description={movie.description}
-                key={movie.id}
             />
         </li>))
 

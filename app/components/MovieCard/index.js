@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types'
+import PopupWindow from '../PopupWindow/PopupWindow';
+import MovieInfo from "../MovieInfo";
 import './MovieCard.scss'
-
-const AddMovie = React.lazy(() => import("../AddMovie"));
 
 export default function MovieCard(props) {
     const [showAddMovie, setShowAddMovie] = useState(false)
+
     const onClick = () => {
         setShowAddMovie(true);
-        console.log('onClick');
     } 
+    
     return (
         <div className="movie-card">
-            <h3>{props.title}<button className="movie-card-menu" onClick={ onClick } >...</button></h3>
-            <ul className="movie-menu-list">
-                <li>Add movie</li>
-                <li>Edit movie</li>
-                <li>Delete movie</li>
-            </ul>
-            <p>{props.description}</p>
-            <>
-                {showAddMovie ? <AddMovie /> : null}
-            </>
+            <button className="movie-card-menu" onClick={ onClick } >...</button>
+            <PopupWindow active={showAddMovie} setActive={setShowAddMovie}>
+                <ul className="movie-menu-list">
+                    <li>Edit movie</li>
+                    <li>Delete movie</li>
+                </ul>
+            </PopupWindow>
+            <MovieInfo title={props.title} src={props.src} description={props.description}/>
         </div>
     )
 }

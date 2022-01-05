@@ -1,16 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
-export default function MovieInfo(props) {
+export default function MovieInfo({title, src, description, handler}) {
     return (
-        <div className="add-edit-movie">
-            <label >Title:
-                <input type="text" name="movie-title">{props.title}</input>
-            </label>
-            <label >Description:
-                <input type="text" name="movie-description">{props.description}</input>
-            </label>
-            <input type="submit" value="Edit Movie" onClick={props.handler}/>
+        <div style={{ backgroundImage: {src}}}>
+            <h3>{title}</h3>
+            <img src={src} />
+            <p>{description}</p>
         </div>
     )
 }
